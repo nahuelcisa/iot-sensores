@@ -1,0 +1,146 @@
+CRITICAL - 2021-09-07 01:13:57 --> Trying to get property 'idUsuario' of non-object
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'A:\\Programas\\xa...', 363, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:13:58 --> Trying to get property 'idUsuario' of non-object
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'A:\\Programas\\xa...', 363, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:14:10 --> Trying to get property 'idUsuario' of non-object
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'A:\\Programas\\xa...', 363, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:23:21 --> Array to string conversion
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(362): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'A:\\Programas\\xa...', 362, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:23:26 --> Array to string conversion
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(362): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'A:\\Programas\\xa...', 362, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:24:08 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 A:\Programas\xamp7.0\htdocs\api\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('A:\\Programas\\xa...')
+#1 A:\Programas\xamp7.0\htdocs\api\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-07 01:26:56 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+#0 A:\Programas\xamp7.0\htdocs\api\system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('A:\\Programas\\xa...')
+#1 A:\Programas\xamp7.0\htdocs\api\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-07 01:51:56 --> Trying to get property 'idUsuario' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Administrador.php(380): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 380, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:52:12 --> Trying to get property 'idUsuario' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Administrador.php(380): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 380, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->TraerCantidadMaquinas()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:57:39 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:59:07 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 01:59:19 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:00:31 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:00:37 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:00:40 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:01:37 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:01:39 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 40, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:03:08 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 42, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:03:27 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 42, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-07 02:04:10 --> Trying to get property 'email' of non-object
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Login.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'H:\\xampp7.0\\htd...', 42, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->ValidarSesion()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

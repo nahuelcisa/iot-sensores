@@ -1,0 +1,7 @@
+{
+  "name": "Iot Silics",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

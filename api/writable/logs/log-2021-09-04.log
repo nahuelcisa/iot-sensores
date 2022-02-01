@@ -1,0 +1,130 @@
+CRITICAL - 2021-09-04 22:12:08 --> Trying to get property 'email' of non-object
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7.0\\htd...', 87, Array)
+#1 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(217): App\Controllers\Login->EnviarCorreoRestablecerPassword('07eb1050f48f9f5...')
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-09-04 22:12:22 --> Trying to get property 'email' of non-object
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7.0\\htd...', 87, Array)
+#1 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(217): App\Controllers\Login->EnviarCorreoRestablecerPassword('07eb1050f48f9f5...')
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-09-04 22:15:03 --> Trying to get property 'email' of non-object
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7.0\\htd...', 87, Array)
+#1 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(217): App\Controllers\Login->EnviarCorreoRestablecerPassword('07eb1050f48f9f5...')
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-09-04 22:59:45 --> Trying to get property 'email' of non-object
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp7.0\\htd...', 177, Array)
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-04 23:44:09 --> Undefined property: stdClass::$email
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7.0\\htd...', 86, Array)
+#1 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(170): App\Controllers\Login->EnviarCorreoRestablecerPassword()
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-09-04 23:50:45 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:50:45 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-04 23:51:03 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:51:03 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-04 23:51:58 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+ERROR - 2021-09-04 23:52:47 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:52:47 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-04 23:53:48 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:53:49 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-04 23:53:59 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:53:59 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-04 23:54:29 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-04 23:54:29 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

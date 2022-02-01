@@ -1,0 +1,71 @@
+<div class="navbar-custom navbar-color-principal">
+    <div class="container-fluid">
+        <ul class="list-unstyled topnav-menu float-right mb-0">
+            <li class="dropdown notification-list topbar-dropdown">
+                <a class="
+            nav-link
+            dropdown-toggle
+            nav-user
+            mr-0
+            waves-effect waves-light
+          " data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                    <img src="assets/vendor/images/users/user-1.jpg" alt="user-image" class="rounded-circle" />
+                    <span class="pro-user-name ml-1">
+            {{ usuario.nombre }} {{ usuario.apellido }}
+            <i class="mdi mdi-chevron-down"></i>
+          </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                    <a [routerLink]="['/miperfil']" class="dropdown-item notify-item">
+                        <i class="fe-user"></i>
+                        <span>Mi Cuenta</span>
+                    </a>
+                    <a [routerLink]="['/cambiarPassword']" class="dropdown-item notify-item">
+                        <i class="fe-terminal"></i>
+                        <span>Cambio de Password</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a (click)="cerrarSesion()" class="dropdown-item notify-item">
+                        <i class="fe-log-out"></i>
+                        <span>Cerrar Sesion</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div class="logo-box">
+            <a class="logo logo-dark text-center">
+                <span class="logo-sm">
+          <img src="assets/vendor/images/logo-sm.png" alt="" height="22" />
+        </span>
+                <span class="logo-lg">
+          <img
+            src="assets/vendor/images/logo-panel-grande.png"
+            alt=""
+            height="44"
+          />
+        </span>
+            </a>
+            <a class="logo logo-light text-center">
+                <span class="logo-sm">
+          <img src="assets/vendor/images/logo-sm.png" alt="" height="33" />
+        </span>
+                <span class="logo-lg">
+          <img src="assets/vendor/images/logo-panel-grande.png" alt="" />
+        </span>
+            </a>
+        </div>
+        <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+            <li></li>
+            <li>
+                <a class="navbar-toggle nav-link" data-toggle="collapse" data-target="#topnav-menu-content">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>

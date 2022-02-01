@@ -1,0 +1,6 @@
+{
+	"appId": "iot.silics",
+	"appName": "Iot Silics",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

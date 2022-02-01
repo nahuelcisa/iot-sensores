@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+#asd_paginate a.paginate_button.disabled:hover {
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate span .paginate_button {
+    &.current,
+    &.current:hover {
+        border: none;
+        color: #fff !important;
+    }
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    &.disabled:hover {
+        color: #fff !important;
+    }
+    &:hover {
+        &.next {
+            border: none !important;
+            border-radius: 5px;
+        }
+        &.previous {
+            border: none !important;
+            border-radius: 5px;
+        }
+        border: none !important;
+        border-radius: 5px;
+        background: #585858 !important;
+    }
+    &.current {
+        border: none;
+        color: #fff !important;
+        border-radius: 5px;
+        background-color: #007bff !important;
+        background: linear-gradient(to bottom, #007bff 0%, #007bff 100%) !important;
+    }
+    border-radius: 5px;
+    border: none !important;
+    transition: 0.2s all;
+}

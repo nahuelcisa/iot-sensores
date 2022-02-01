@@ -1,0 +1,99 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+<div *ngIf="mandarModal">
+    <app-modal *ngIf="mandarModal" [datosActualesUsuario]="arrayDatosActualUsuario" [usaSelect]="true" [objInput]="datosEnviarModal" [datoGuardar]="objEnviarAModal" (modalCerrado)="obtenerInfoModal($event)"></app-modal>
+</div>
+<div class="content-page">
+    <div class="content">
+        <div style="padding: 1rem" class="container-fluid">
+            <div *ngIf="!cargado" class="centrar-cargando">
+                <i class="fas fa-spinner fa-7x fa-spin"></i>
+            </div>
+            <app-modal></app-modal>
+            <table id="asd" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+                <thead>
+                    <tr *ngIf="cargado">
+                        <th>Id</th>
+                        <th>Nombre y apellido</th>
+                        <th>Email</th>
+                        <th>Perfil</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuario of usuarios">
+                        <td>{{ usuario.idUsuario }}</td>
+                        <td>{{ usuario.nombre }} {{ usuario.apellido }}</td>
+                        <td>{{ usuario.email }}</td>
+                        <td>
+                            <span class="badge" [ngClass]="{
+                  ' badge-secondary': usuario.perfil == 'cliente',
+                  ' badge-primary': usuario.perfil == 'administrador',
+                  ' badge-success': usuario.perfil == 'superadministrador'
+                }">
+                <i
+                  class="fas"
+                  [ngClass]="{
+                    'fa-user': usuario.perfil == 'cliente',
+                    'fa-user-tie': usuario.perfil == 'administrador',
+                    'fa-user-nurse': usuario.perfil == 'superadministrador'
+                  }"
+                ></i>
+                {{ usuario.perfil }}</span
+              >
+            </td>
+            <td>
+              <span
+                *ngIf="usuario.habilitado == true"
+                class="badge badge-success"
+                >Activo</span
+              >
+              <span
+                *ngIf="usuario.habilitado == false"
+                class="badge badge-danger"
+                >Baja</span
+              >
+            </td>
+
+            <td>
+              <button
+                (click)="mostrarModal(usuario.idUsuario!, 'maquina')"
+                type="button"
+                class="btn btn-primary"
+              >
+                Asignar dispositivo
+              </button>
+              <button
+                *ngIf="usuario.habilitado == true"
+                (click)="bajaLogica(usuario.idUsuario!)"
+                style="margin-left: 10px"
+                type="button"
+                class="btn btn-danger sm"
+              >
+                Dar de baja
+              </button>
+              <button
+                *ngIf="usuario.habilitado == false"
+                (click)="altaLogica(usuario.idUsuario!)"
+                style="margin-left: 10px"
+                type="button"
+                class="btn btn-success sm"
+              >
+                Dar de alta
+              </button>
+              <button
+                style="margin-left: 10px"
+                type="button"
+                class="btn btn-secondary sm"
+                (click)="mostrarModal(usuario.idUsuario!, 'perfil')"
+              >
+                Asignar perfil
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

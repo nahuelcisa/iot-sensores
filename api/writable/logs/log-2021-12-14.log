@@ -1,0 +1,66 @@
+ERROR - 2021-12-14 13:30:31 --> Column 'idDevice' cannot be null
+CRITICAL - 2021-12-14 13:30:31 --> Column 'idDevice' cannot be null
+#0 H:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `ma...')
+#1 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 H:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 H:\xampp7.0\htdocs\api\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 H:\xampp7.0\htdocs\api\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 H:\xampp7.0\htdocs\api\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(185): CodeIgniter\Model->insert()
+#8 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#9 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#10 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-12-14 13:32:20 --> Duplicate entry 'asd' for key 'idDevice'
+CRITICAL - 2021-12-14 13:32:20 --> Duplicate entry 'asd' for key 'idDevice'
+#0 H:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `ma...')
+#1 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 H:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 H:\xampp7.0\htdocs\api\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 H:\xampp7.0\htdocs\api\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 H:\xampp7.0\htdocs\api\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(185): CodeIgniter\Model->insert()
+#8 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#9 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#10 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-12-14 13:38:42 --> Undefined offset: 0
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(188): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'H:\\xampp7.0\\htd...', 188, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-14 13:39:56 --> Duplicate entry 'asdfgg' for key 'idDevice'
+CRITICAL - 2021-12-14 13:39:56 --> Duplicate entry 'asdfgg' for key 'idDevice'
+#0 H:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('INSERT INTO `ma...')
+#1 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 H:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 H:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 H:\xampp7.0\htdocs\api\system\Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 H:\xampp7.0\htdocs\api\system\BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 H:\xampp7.0\htdocs\api\system\Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(185): CodeIgniter\Model->insert()
+#8 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#9 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#10 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-12-14 13:42:14 --> Undefined index: idUsuario
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'H:\\xampp7.0\\htd...', 193, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-14 13:43:04 --> Undefined index: idUsuario
+#0 H:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'H:\\xampp7.0\\htd...', 193, Array)
+#1 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AsignarMaquinaConCodigo()
+#2 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#3 H:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 H:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

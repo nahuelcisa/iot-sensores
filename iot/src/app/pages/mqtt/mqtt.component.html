@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+
+<div class="content-page">
+    <div *ngIf="!cargando" class="centrar-cargando">
+        <i class="fas fa-spinner fa-7x fa-spin"></i>
+    </div>
+    <button class="btn btn-success mr-2" (click)="enviar('02')">Abrir</button>
+    <button class="btn btn-danger" (click)="enviar('03')">Cerrar</button>
+    <div *ngIf="cargando" class="content jumbotron">
+        <ul *ngIf="deviceClass == '03'">
+            <li *ngFor="let obj of events">
+                Estado actual del sensor:
+                <span *ngIf="obj.MsgContent == '02'" class="badge badge-success">Abierto</span
+        >
+        <span *ngIf="obj.MsgContent == '03'" class="badge badge-danger"
+          >Cerrado</span
+        >
+        A hora: {{ obj.fechaActual }}
+      </li>
+    </ul>
+
+    <div
+      *ngIf="deviceClass == '08'"
+      echarts
+      [options]="options"
+      class="demo-chart"
+      (chartInit)="onChartEvent($event, 'chartInit')"
+      (chartClick)="onChartEvent($event, 'chartClick')"
+      (chartDblClick)="onChartEvent($event, 'chartDblClick')"
+      (chartMouseDown)="onChartEvent($event, 'chartMouseDown')"
+      (chartMouseUp)="onChartEvent($event, 'chartMouseUp')"
+      (chartMouseOver)="onChartEvent($event, 'chartMouseOver')"
+      (chartMouseOut)="onChartEvent($event, 'chartMouseOut')"
+      (chartGlobalOut)="onChartEvent($event, 'chartGlobalOut')"
+      (chartContextMenu)="onChartEvent($event, 'chartContextMenu')"
+      (chartDataZoom)="onChartEvent($event, 'chartDataZoom')"
+    ></div>
+  </div>
+</div>

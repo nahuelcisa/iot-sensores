@@ -1,0 +1,25 @@
+<ion-header color="dark">
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+            <ion-button color="success" (click)="enviar('02')">Abrir</ion-button>
+            <ion-button color="danger" (click)="enviar('03')">Cerrar</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="content-page" color="dark">
+    <div *ngIf="cargando" class="content jumbotron">
+        <ul *ngIf="deviceClass == '03'">
+            <li *ngFor="let obj of events">
+                Estado actual del sensor:
+                <ion-label *ngIf="obj.MsgContent == '02'" color="success">Abierto</ion-label>
+                <ion-label *ngIf="obj.MsgContent == '03'" color="danger">Cerrado</ion-label>
+                A hora: {{ obj.fechaActual }}
+            </li>
+        </ul>
+
+        <div *ngIf="deviceClass == '08'" echarts [options]="options" class="demo-chart" (chartInit)="onChartEvent($event, 'chartInit')" (chartClick)="onChartEvent($event, 'chartClick')" (chartDblClick)="onChartEvent($event, 'chartDblClick')" (chartMouseDown)="onChartEvent($event, 'chartMouseDown')"
+            (chartMouseUp)="onChartEvent($event, 'chartMouseUp')" (chartMouseOver)="onChartEvent($event, 'chartMouseOver')" (chartMouseOut)="onChartEvent($event, 'chartMouseOut')" (chartGlobalOut)="onChartEvent($event, 'chartGlobalOut')" (chartContextMenu)="onChartEvent($event, 'chartContextMenu')"
+            (chartDataZoom)="onChartEvent($event, 'chartDataZoom')"></div>
+    </div>
+</ion-content>

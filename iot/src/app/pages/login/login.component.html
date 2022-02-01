@@ -1,0 +1,84 @@
+<div class="auth-fluid">
+    <div class="auth-fluid-form-box">
+        <div class="align-items-center d-flex h-100">
+            <div class="card-body">
+                <div class="auth-brand text-center text-lg-left">
+                    <div class="auth-logo">
+                        <a href="index.html" class="logo logo-dark text-center">
+                            <span class="logo-lg"> </span>
+                        </a>
+
+                        <a href="#" class="logo logo-light text-center">
+                            <span class="logo-lg">
+                <img src="assets/vendor/images/logo.png" alt="" height="22" />
+              </span>
+                        </a>
+                    </div>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="iraDashboard()" id="form-login" class="mt-4" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input [class.is-invalid]="emailValido" formControlName="email" class="form-control" type="email" id="email" name="email" placeholder="Ingrese su email" autocomplete="off" />
+                        <small *ngIf="emailValido" class="text-danger">Ingrese su correo electrónico.</small
+            >
+          </div>
+          <div class="form-group">
+            <a [routerLink]="['/restablecer']" class="text-muted float-right"
+              ><small >Olvidó su password?</small></a>
+                        <label for="password ">Password</label>
+                        <div class="input-group input-group-merge">
+                            <input [class.is-invalid]="passwordValido" formControlName="password" [type]="mostrarPassword ? 'text' : 'password'" id="password" name="password" class="form-control" placeholder="Ingrese su password" />
+
+                            <div [ngClass]="mostrarPassword ? 'show-password' : ''" class="input-group-append" data-password="false">
+                                <div (click)="cambiarTipo()" class="input-group-text">
+                                    <span class="password-eye"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <small style="display: inline-block" *ngIf="emailValido" class="text-danger">Ingrese su contraseña.</small
+            >
+          </div>
+
+          <div class="form-group mb-4">
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="checkbox-signin"
+                name="remember"
+                value="1"
+              />
+              <label class="custom-control-label" for="checkbox-signin"
+                >Recordar datos</label
+              >
+            </div>
+          </div>
+          <div class="error-login">
+            <div class="alert alert-danger text-center"></div>
+          </div>
+          <div class="form-group mb-0 text-center">
+            <button
+              class="ladda-button btn btn-success btn-block"
+              id="btn-ingresar"
+              dir="ltr"
+              data-style="slide-down"
+              type="submit"
+            >
+              <span class="ladda-label"><strong>Ingresar</strong></span>
+              <span class="ladda-spinner"></span>
+              <div class="ladda-progress" style="width: 0px"></div>
+            </button>
+          </div>
+        </form>
+        <footer class="footer footer-alt">
+          <p class="text-muted">
+            No tienes una cuenta?
+            <a [routerLink]="['/registro']" class="text-muted ml-1"
+              ><b>Click aqui</b></a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>

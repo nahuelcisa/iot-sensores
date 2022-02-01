@@ -1,0 +1,30 @@
+<ion-menu side="start" content-id="main-content">
+    <ion-header>
+        <ion-toolbar class="items">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content class="items">
+        <ion-item class="items">
+            <ion-icon name="desktop" slot="start"></ion-icon>
+            <ion-label class="items" [routerLink]="['/dispositivos']">Mis dispositivos</ion-label>
+        </ion-item>
+        <ion-item class="items">
+            <ion-icon name="log-out" slot="start"></ion-icon>
+            <ion-label class="items" (click)="cerrarSesion()">Cerrar sesión</ion-label>
+        </ion-item>
+    </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+    <ion-header>
+        <ion-toolbar class="items">
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title color="dark" slot="end">{{usuario.apellido}}, {{usuario.nombre}}
+                <ion-icon name="person"></ion-icon>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+</div>

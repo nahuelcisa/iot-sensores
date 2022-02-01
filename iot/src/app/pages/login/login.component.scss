@@ -1,0 +1,19 @@
+.has-error>span.help-block {
+    color: #cf0000 !important;
+}
+
+.error-login {
+    display: none;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: #ed7f06 !important;
+    border-color: #ed7f06 !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff !important;
+    border-color: #ed7f06 !important;
+    background-color: #ed7f06 !important;
+}

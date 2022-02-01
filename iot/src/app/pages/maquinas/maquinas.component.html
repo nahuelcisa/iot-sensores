@@ -1,0 +1,28 @@
+<div class="border">
+    <app-navbar></app-navbar>
+    <app-sidebar></app-sidebar>
+</div>
+
+<div class="content-page">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="form_wrapper">
+                <div class="form_container">
+                  <div class="title_container">
+                    <h2>Alta de dispositivo</h2>
+                  </div>
+                  <div class="row clearfix">
+                    <div class="">
+                      <form [formGroup]= "altaForm" (ngSubmit)="altaMaquina()">
+                        <div class="input_field"> <span><i class="fas fa-hdd"></i></span>
+                          <input formControlName="idDevice" type="text" name="idDevice" placeholder="IdDevice" required/>
+                        </div>
+                        <input class="button" type="submit"  />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>  
+    </div>
+</div>

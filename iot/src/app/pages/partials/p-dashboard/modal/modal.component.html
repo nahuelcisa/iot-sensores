@@ -1,0 +1,33 @@
+<button hidden id="botonClickear" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button>
+
+<!-- Modal -->
+<div data-backdrop="static" data-keyboard="false" class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    ID del usuario a asignar: {{ datoGuardar?.valorEnviar }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                <p>Actualmente posee:</p>
+                <ul>
+                    <li *ngFor="let item of datosActualesUsuario">{{ item }}</li>
+                </ul>
+                <select [(ngModel)]="valorSeleccionado" *ngIf="usaSelect" class="form-select" aria-label="Seleccione">
+          <option *ngFor="let item of objInput" [value]="item.valor" selected>
+            {{ item.campoVisible }}
+          </option>
+        </select>
+            </div>
+            <div class="modal-footer">
+                <button (click)="guardar()" type="button" class="btn btn-primary" data-dismiss="modal">
+          Guardar
+        </button>
+                <button (click)="cerrar()" type="button" class="btn btn-danger" data-dismiss="modal">
+          Cerrar
+        </button>
+            </div>
+        </div>
+    </div>
+</div>

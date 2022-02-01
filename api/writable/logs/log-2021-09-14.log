@@ -1,0 +1,60 @@
+ERROR - 2021-09-14 22:31:22 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:26 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:30 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:34 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:36 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:37 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:38 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:39 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:41 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:31:42 --> Column 'idDevice' cannot be null
+ERROR - 2021-09-14 22:37:42 --> Duplicate entry '' for key 'idDevice'
+ERROR - 2021-09-14 22:37:45 --> Duplicate entry '' for key 'idDevice'
+ERROR - 2021-09-14 22:37:53 --> Duplicate entry '' for key 'idDevice'
+ERROR - 2021-09-14 22:38:05 --> Duplicate entry '' for key 'idDevice'
+ERROR - 2021-09-14 22:40:17 --> Duplicate entry '' for key 'idDevice'
+CRITICAL - 2021-09-14 23:39:53 --> Object of class stdClass could not be converted to string
+#0 D:\xampp7.0\htdocs\api\system\Database\Query.php(387): strtr('UPDATE `maquina...', Array)
+#1 D:\xampp7.0\htdocs\api\system\Database\Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('UPDATE `maquina...', Array)
+#2 D:\xampp7.0\htdocs\api\system\Database\Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#4 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `maquina...', Array, false)
+#5 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#8 D:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(102): CodeIgniter\Model->update()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AltaLogicaMaquina('')
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#11 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-09-14 23:40:19 --> Object of class stdClass could not be converted to string
+#0 D:\xampp7.0\htdocs\api\system\Database\Query.php(387): strtr('UPDATE `maquina...', Array)
+#1 D:\xampp7.0\htdocs\api\system\Database\Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('UPDATE `maquina...', Array)
+#2 D:\xampp7.0\htdocs\api\system\Database\Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#4 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `maquina...', Array, false)
+#5 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#8 D:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(76): CodeIgniter\Model->update()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->BajaLogicaMaquina('')
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#11 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-09-14 23:42:33 --> Object of class stdClass could not be converted to string
+#0 D:\xampp7.0\htdocs\api\system\Database\Query.php(387): strtr('UPDATE `maquina...', Array)
+#1 D:\xampp7.0\htdocs\api\system\Database\Query.php(355): CodeIgniter\Database\Query->matchNamedBinds('UPDATE `maquina...', Array)
+#2 D:\xampp7.0\htdocs\api\system\Database\Query.php(170): CodeIgniter\Database\Query->compileBinds()
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\Query->getQuery()
+#4 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `maquina...', Array, false)
+#5 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#8 D:\xampp7.0\htdocs\api\app\Controllers\Maquina.php(102): CodeIgniter\Model->update()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Maquina->AltaLogicaMaquina('')
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maquina))
+#11 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

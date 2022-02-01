@@ -1,0 +1,12 @@
+CRITICAL - 2021-09-03 01:57:45 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp7.0\htdocs\iot\api\system\CodeIgniter.php(228): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp7.0\htdocs\iot\api\system\CodeIgniter.php(180): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp7.0\htdocs\iot\api\system\bootstrap.php(157): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp7.0\htdocs\iot\api\spark(46): require('D:\\xampp7.0\\htd...')
+#4 {main}
+CRITICAL - 2021-09-03 01:59:58 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp7.0\htdocs\iot\api\system\CodeIgniter.php(228): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp7.0\htdocs\iot\api\system\CodeIgniter.php(180): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp7.0\htdocs\iot\api\system\bootstrap.php(157): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp7.0\htdocs\iot\api\spark(46): require('D:\\xampp7.0\\htd...')
+#4 {main}

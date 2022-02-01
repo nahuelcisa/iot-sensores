@@ -1,0 +1,17 @@
+.container {
+    margin-top: 5cm;
+}
+
+ion-content {
+    --background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../assets/images/bg-auth.jpg") no-repeat right / cover !important;
+}
+
+.botones {
+    backdrop-filter: blur(4px);
+    --color: #222;
+}
+
+.items {
+    --background: #f2f4f8;
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,193 @@
+ERROR - 2021-09-05 00:00:39 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-05 00:00:39 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-09-05 00:19:16 --> Call to undefined method App\Models\UsuarioModel::last_query
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->__call('last_query', Array)
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-05 00:22:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+#0 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-09-05 00:30:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"clave" = 03bdce2f40cd7cd2110e40575b8a0321 WHERE md5(`email`) =07eb1050f48f9f...' at line 1
+CRITICAL - 2021-09-05 00:30:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"clave" = 03bdce2f40cd7cd2110e40575b8a0321 WHERE md5(`email`) =07eb1050f48f9f...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(185): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-09-05 00:32:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+CRITICAL - 2021-09-05 00:32:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('\r\n             ...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('\r\n             ...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-09-05 00:32:41 --> There is no data to update.
+#0 D:\xampp7.0\htdocs\api\system\BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp7.0\htdocs\api\system\BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(false, 'update')
+#2 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(Array, false)
+#3 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->update('\r\n             ...', false)
+#4 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#5 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-09-05 00:33:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+CRITICAL - 2021-09-05 00:33:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('\r\n             ...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('\r\n             ...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n             ...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('\r\n             ...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(187): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-09-05 00:34:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+CRITICAL - 2021-09-05 00:34:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''usuarios' SET 'clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE 'usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE 'usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE 'usuario...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('UPDATE 'usuario...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(186): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-09-05 00:34:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07eb1050f48f9f5c4...' at line 1
+CRITICAL - 2021-09-05 00:34:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''clave' =de9ffd8e7b08bfad8e5f4d2101cd4d5bWHERE md5('email')=07eb1050f48f9f5c4...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('SET 'clave' =de...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SET 'clave' =de...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SET 'clave' =de...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('SET 'clave' =de...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(186): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-09-05 00:34:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''clave' =ec2c7b4791968f05add3d87e4f6ba2baWHERE md5('email')=07eb1050f48f9f5c4...' at line 1
+CRITICAL - 2021-09-05 00:34:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''clave' =ec2c7b4791968f05add3d87e4f6ba2baWHERE md5('email')=07eb1050f48f9f5c4...' at line 1
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('SET 'clave' =ec...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SET 'clave' =ec...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SET 'clave' =ec...')
+#3 D:\xampp7.0\htdocs\api\system\BaseModel.php(1746): CodeIgniter\Database\BaseConnection->query('SET 'clave' =ec...', false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(796): CodeIgniter\BaseModel->__call('query', Array)
+#5 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(186): CodeIgniter\Model->__call('query', Array)
+#6 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#7 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-09-05 00:36:13 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-05 00:36:14 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(193): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-05 00:36:32 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+CRITICAL - 2021-09-05 00:36:32 --> Unknown column '0c83f57c786a0b4a39efab23731c7ebc' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(193): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-05 00:36:58 --> Unknown column 'd41d8cd98f00b204e9800998ecf8427e' in 'where clause'
+CRITICAL - 2021-09-05 00:36:59 --> Unknown column 'd41d8cd98f00b204e9800998ecf8427e' in 'where clause'
+#0 D:\xampp7.0\htdocs\api\system\Database\MySQLi\Connection.php(329): mysqli->query('UPDATE `usuario...')
+#1 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 D:\xampp7.0\htdocs\api\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 D:\xampp7.0\htdocs\api\system\Database\BaseBuilder.php(2482): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 D:\xampp7.0\htdocs\api\system\Model.php(326): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp7.0\htdocs\api\system\BaseModel.php(917): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 D:\xampp7.0\htdocs\api\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#7 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(193): CodeIgniter\Model->update()
+#8 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->CambiarPasswordUsuario()
+#9 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-09-05 00:48:51 --> Undefined property: CodeIgniter\HTTP\Response::$message
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7.0\\htd...', 201, Array)
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-05 00:51:11 --> Undefined property: CodeIgniter\HTTP\Response::$message
+#0 D:\xampp7.0\htdocs\api\app\Controllers\Login.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp7.0\\htd...', 201, Array)
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-05 00:55:23 --> Cannot use object of type CodeIgniter\HTTP\Response as array
+#0 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-05 00:56:32 --> Cannot access protected property CodeIgniter\HTTP\Response::$body
+#0 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-05 00:56:38 --> Cannot access protected property CodeIgniter\HTTP\Response::$body
+#0 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Login->RestablecerPassword()
+#1 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\xampp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

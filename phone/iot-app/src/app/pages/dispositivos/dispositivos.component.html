@@ -1,0 +1,17 @@
+<ion-content color="dark">
+    <app-home></app-home>
+    <div *ngFor="let dispositivo of arrayDispositivos" style="margin-top: 2cm">
+        <ion-col size="6">
+            <div class="contenedor">
+                <div>
+                    <ion-label color="light">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                        {{ dispositivo.idDevice }}</ion-label>
+                </div>
+                <div style="margin-top: 1rem">
+                    <ion-button class="items" [routerLink]="['/dispositivo', dispositivo.idDevice]" color="primary">Ver dispositivo</ion-button>
+                </div>
+            </div>
+        </ion-col>
+    </div>
+</ion-content>

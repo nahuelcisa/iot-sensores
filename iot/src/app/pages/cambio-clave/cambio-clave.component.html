@@ -1,0 +1,126 @@
+<app-navbar *ngIf="ingresado"></app-navbar>
+<app-sidebar *ngIf="ingresado"></app-sidebar>
+<div class="main">
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Restablecer contraseña</h2>
+                    <form [formGroup]="restablecerForm" (ngSubmit)="restablecerPassword()" class="restablecer-form" id="restablecer-form" enctype="multipart/form-data" *ngIf="!urlGet && !ingresado">
+                        <div class="form-group">
+                            <input [class.is-invalid]="emailValido" formControlName="email" class="form-control" type="email" id="email" name="email" placeholder="Ingrese su email" autocomplete="off" />
+                            <small *ngIf="emailValido" class="text-danger">Ingrese su correo electrónico.</small
+              >
+            </div>
+            <div class="form-group mb-0 text-center">
+              <button
+                class="ladda-button btn btn-success btn-block"
+                id="btn-Registrarse"
+                dir="ltr"
+                data-style="slide-down"
+                type="submit"
+              >
+                <span class="ladda-label"><strong>Restablecer</strong></span>
+                <span class="ladda-spinner"></span>
+                <div class="ladda-progress" style="width: 0px"></div>
+              </button>
+            </div>
+          </form>
+          <form
+            [formGroup]="restablecerForm"
+            (ngSubmit)="restablecerPassword()"
+            class="restablecer-form"
+            id="restablecer-form"
+            enctype="multipart/form-data"
+            *ngIf="urlGet"
+          >
+            <div class="form-group">
+              <input
+                [class.is-invalid]="passwordValido"
+                formControlName="password"
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Ingrese su password"
+              />
+              <small *ngIf="passwordValido" class="text-danger"
+                >Ingrese su clave.</small
+              >
+            </div>
+            <div class="form-group mb-0 text-center">
+              <button
+                class="ladda-button btn btn-success btn-block"
+                id="btn-Registrarse"
+                dir="ltr"
+                data-style="slide-down"
+                type="submit"
+              >
+                <span class="ladda-label"><strong>Cambiar</strong></span>
+                <span class="ladda-spinner"></span>
+                <div class="ladda-progress" style="width: 0px"></div>
+              </button>
+            </div>
+          </form>
+          <form
+            [formGroup]="restablecerForm"
+            (ngSubmit)="restablecerPassword()"
+            class="restablecer-form"
+            id="restablecer-form"
+            enctype="multipart/form-data"
+            *ngIf="!urlGet && ingresado"
+          >
+            <div class="form-group">
+              <input
+                [class.is-invalid]="passwordValido"
+                formControlName="password"
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Ingrese su password"
+              />
+              <small *ngIf="passwordValido" class="text-danger"
+                >Ingrese su clave.</small
+              >
+            </div>
+            <div class="form-group mb-0 text-center">
+              <button
+                class="ladda-button btn btn-success btn-block"
+                id="btn-Registrarse"
+                dir="ltr"
+                data-style="slide-down"
+                type="submit"
+              >
+                <span class="ladda-label"><strong>Cambiar</strong></span>
+                <span class="ladda-spinner"></span>
+                <div class="ladda-progress" style="width: 0px"></div>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="signup-image">
+          <figure>
+            <img
+              src="assets/vendor/images/signup-image.jpg"
+              alt="sing up image"
+            />
+          </figure>
+          <a
+            [routerLink]="['/login']"
+            class="signup-image-link"
+            *ngIf="!ingresado"
+            >Ir a la pagina principal.</a
+          >
+          <a
+            [routerLink]="['/dashboard']"
+            class="signup-image-link"
+            *ngIf="ingresado"
+            >Ir a dashboard.</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

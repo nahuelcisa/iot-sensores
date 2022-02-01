@@ -1,0 +1,43 @@
+CRITICAL - 2021-09-06 01:07:48 --> Too few arguments to function App\Controllers\Administrador::AltaLogicaUsuario(), 0 passed in A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php on line 928 and exactly 1 expected
+#0 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-06 01:08:48 --> Too few arguments to function App\Controllers\Administrador::AltaLogicaUsuario(), 0 passed in A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php on line 928 and exactly 1 expected
+#0 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-06 01:09:01 --> Too few arguments to function App\Controllers\Administrador::AltaLogicaUsuario(), 0 passed in A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php on line 928 and exactly 1 expected
+#0 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-06 01:10:48 --> Too few arguments to function App\Controllers\Administrador::AltaLogicaUsuario(), 0 passed in A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php on line 928 and exactly 1 expected
+#0 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-06 01:11:48 --> Too few arguments to function App\Controllers\Administrador::AltaLogicaUsuario(), 0 passed in A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php on line 928 and exactly 1 expected
+#0 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-06 01:13:19 --> Trying to get property 'idUsuario' of non-object
+#0 A:\Programas\xamp7.0\htdocs\api\app\Controllers\Administrador.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'A:\\Programas\\xa...', 178, Array)
+#1 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(928): App\Controllers\Administrador->AltaLogicaUsuario()
+#2 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#3 A:\Programas\xamp7.0\htdocs\api\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 A:\Programas\xamp7.0\htdocs\api\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-06 01:50:08 --> Cannot add or update a child row: a foreign key constraint fails (`iot`.`clientesmaquinas`, CONSTRAINT `maquina` FOREIGN KEY (`idMaquina`) REFERENCES `maquinas` (`idMaquina`))
+ERROR - 2021-09-06 01:50:15 --> Cannot add or update a child row: a foreign key constraint fails (`iot`.`clientesmaquinas`, CONSTRAINT `maquina` FOREIGN KEY (`idMaquina`) REFERENCES `maquinas` (`idMaquina`))
+ERROR - 2021-09-06 18:08:41 --> Table 'iot.perfil' doesn't exist
+ERROR - 2021-09-06 18:09:24 --> Table 'iot.perfil' doesn't exist
+ERROR - 2021-09-06 18:10:14 --> Table 'iot.perfil' doesn't exist
+ERROR - 2021-09-06 18:11:08 --> Unknown column 'perfiles.descripcion' in 'field list'

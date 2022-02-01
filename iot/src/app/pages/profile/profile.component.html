@@ -1,0 +1,44 @@
+<div id="wrapper">
+    <app-navbar></app-navbar>
+
+    <div class="content-page">
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4 class="fuente-grande">Nombre completo</h4>
+                            </div>
+                            <h4 class="col-sm-9 text-secondary">
+                                {{ usuario.nombre }} {{ usuario.apellido }}
+                            </h4>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4 class="mb-0">Email</h4>
+                            </div>
+                            <h4 class="col-sm-9 text-secondary">
+                                {{ usuario.email }}
+                            </h4>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h4 class="mb-0">Cantidad de dispositivos</h4>
+                            </div>
+                            <h4 *ngIf="!cargado" class="col-sm-9 text-secondary">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </h4>
+                            <h4 *ngIf="cargado" class="col-sm-9 text-secondary">
+                                {{ cantidadMaquinas }}.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-sidebar></app-sidebar>
+</div>
